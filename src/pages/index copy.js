@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import Head  from "next/head";
 import KashmirPackages from "@/components/packages";
 import Tour from "@/components/tourPackage";
-import BackgroundSection from "@/components/activities";
+import BackgroundSection from "@/components/fixed";
 
 const App = () => {
   return (

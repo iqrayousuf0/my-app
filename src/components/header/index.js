@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link"; // Import Link from Next.js
 import styles from "./header.module.css";
 
 const Navi = () => {
@@ -55,7 +56,6 @@ const Navi = () => {
         </div>
       </div>
 
-
       <div className={styles.mainHeader}>
         <div className={styles.topHeaderInner}>
           <div className={styles.logo}>
@@ -63,7 +63,6 @@ const Navi = () => {
           </div>
 
           <nav className={styles.navLinks}>
-          
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("home", true)}
@@ -76,12 +75,11 @@ const Navi = () => {
                     Home Version One
                   </a>
                   <a href="#HomeVersionTwo" className={styles.dropdownLink}>
-                  Home Version Two
+                    Home Version Two
                   </a>
-                 
                 </div>
               )}
-            </div>/
+            </div>
 
             <div
               className={styles.navLink}
@@ -97,17 +95,15 @@ const Navi = () => {
                   <a href="#team" className={styles.dropdownLink}>
                     Our Team
                   </a>
-                 
                   <a href="#faq" className={styles.dropdownLink}>
                     FAQs
                   </a>
                   <a href="#404" className={styles.dropdownLink}>
                     404
                   </a>
-                  
                 </div>
               )}
-            </div>/
+            </div>
 
             <div
               className={styles.navLink}
@@ -121,16 +117,15 @@ const Navi = () => {
                     Services Version One
                   </a>
                   <a href="#ServicesVersionTwo" className={styles.dropdownLink}>
-                  Services Version Two
+                    Services Version Two
                   </a>
                   <a href="#ServicesDetails" className={styles.dropdownLink}>
-                  Services Details
+                    Services Details
                   </a>
                 </div>
               )}
-            </div>/
+            </div>
 
-           
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("portfolio", true)}
@@ -139,18 +134,14 @@ const Navi = () => {
               Portfolio
               {dropdownVisible.portfolio && (
                 <div className={styles.dropdownMenu}>
-                  <a href="#projects" className={styles.dropdownLink}>
-                    Project
-                  </a>
-                  <a href="#ServicesDetails" className={styles.dropdownLink}>
-                  Services Details
-                  </a>
-                 
+                  {/* Update the link to use Next.js Link component */}
+                  <Link href="/projects" className={styles.dropdownLink}>
+                    Projects
+                  </Link>
                 </div>
               )}
-            </div>/
+            </div>
 
-    
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("blogs", true)}
@@ -170,8 +161,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>/
-
+            </div>
 
             <div
               className={styles.navLink}
