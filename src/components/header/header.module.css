@@ -1,0 +1,61 @@
+/* Top Header */
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00274e;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.topHeaderText {
+  font-weight: 500;
+}
+
+.topHeaderIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Main Header */
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  /* White background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00274e;
+  /* Same blue as the top header */
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #00274e;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ff6600;
+  /* Highlight color */
+}
