@@ -1,8 +1,6 @@
-/* Top Header */
+
 .topHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
   background-color: #00274e;
   /* Blue background */
   color: #fff;
@@ -10,14 +8,23 @@
   padding: 10px 20px;
   font-size: 14px;
 }
+.topHeaderInner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .topHeaderText {
   font-weight: 500;
 }
 
-.topHeaderIcons {
-  display: flex;
-  gap: 15px;
+.topHeaderIcons img {
+  
+  margin-right: 10px;
+  mix-blend-mode: multiply;
+  height: 20px;
 }
 
 .icon {
