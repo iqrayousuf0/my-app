@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
 
-
-
 const Navi = () => {
+  const [dropdownVisible, setDropdownVisible] = useState({
+    pages: false,
+    home: false,
+    services: false,
+    portfolio: false,
+    blogs: false,
+    contacts: false,
+  });
+
+  const toggleDropdown = (menu, state) => {
+    setDropdownVisible((prev) => ({
+      ...prev,
+      [menu]: state,
+    }));
+  };
+
   return (
     <div>
       {/* Top Header */}
       <div className={styles.topHeader}>
         <div className={styles.topHeaderInner}>
           <span className={styles.topHeaderText}>
-            We are leading consultant firm!
+            We are a leading consultant firm!
           </span>
           <div className={styles.topHeaderIcons}>
             <a
@@ -37,19 +51,11 @@ const Navi = () => {
             >
               <img src="./images/linkedin.jpeg" alt="LinkedIn" />
             </a>
-            {/* <a
-            href="https://pinterest.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.icon}
-          >
-            <img src="./images/pinterest.jpeg" alt="Pinterest" />
-          </a> */}
           </div>
         </div>
       </div>
 
-      {/* Main Header */}
+
       <div className={styles.mainHeader}>
         <div className={styles.topHeaderInner}>
           <div className={styles.logo}>
@@ -57,24 +63,123 @@ const Navi = () => {
           </div>
 
           <nav className={styles.navLinks}>
-            <a href="#home" className={styles.navLink}>
+          
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("home", true)}
+              onMouseLeave={() => toggleDropdown("home", false)}
+            >
               Home
-            </a>/
-            <a href="#pages" className={styles.navLink}>
+              {dropdownVisible.home && (
+                <div className={styles.dropdownMenu}>
+                  <a href="#HomeVersionOne" className={styles.dropdownLink}>
+                    Home Version One
+                  </a>
+                  <a href="#HomeVersionTwo" className={styles.dropdownLink}>
+                  Home Version Two
+                  </a>
+                 
+                </div>
+              )}
+            </div>/
+
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("pages", true)}
+              onMouseLeave={() => toggleDropdown("pages", false)}
+            >
               Pages
-            </a>/
-            <a href="#service" className={styles.navLink}>
-              Service
-            </a>/
-            <a href="#portfolio" className={styles.navLink}>
+              {dropdownVisible.pages && (
+                <div className={styles.dropdownMenu}>
+                  <a href="#about" className={styles.dropdownLink}>
+                    About Us
+                  </a>
+                  <a href="#team" className={styles.dropdownLink}>
+                    Our Team
+                  </a>
+                 
+                  <a href="#faq" className={styles.dropdownLink}>
+                    FAQs
+                  </a>
+                  <a href="#404" className={styles.dropdownLink}>
+                    404
+                  </a>
+                  
+                </div>
+              )}
+            </div>/
+
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("services", true)}
+              onMouseLeave={() => toggleDropdown("services", false)}
+            >
+              Services
+              {dropdownVisible.services && (
+                <div className={styles.dropdownMenu}>
+                  <a href="#ServicesVersionOne" className={styles.dropdownLink}>
+                    Services Version One
+                  </a>
+                  <a href="#ServicesVersionTwo" className={styles.dropdownLink}>
+                  Services Version Two
+                  </a>
+                  <a href="#ServicesDetails" className={styles.dropdownLink}>
+                  Services Details
+                  </a>
+                </div>
+              )}
+            </div>/
+
+           
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("portfolio", true)}
+              onMouseLeave={() => toggleDropdown("portfolio", false)}
+            >
               Portfolio
-            </a>/
-            <a href="#blog" className={styles.navLink}>
-              Blog
-            </a>/
-            <a href="#contact" className={styles.navLink}>
-              Contact
-            </a>
+              {dropdownVisible.portfolio && (
+                <div className={styles.dropdownMenu}>
+                  <a href="#projects" className={styles.dropdownLink}>
+                    Project
+                  </a>
+                  <a href="#ServicesDetails" className={styles.dropdownLink}>
+                  Services Details
+                  </a>
+                 
+                </div>
+              )}
+            </div>/
+
+    
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("blogs", true)}
+              onMouseLeave={() => toggleDropdown("blogs", false)}
+            >
+              Blogs
+              {dropdownVisible.blogs && (
+                <div className={styles.dropdownMenu}>
+                  <a href="#BlogList" className={styles.dropdownLink}>
+                    Blog List
+                  </a>
+                  <a href="#BlogGrid" className={styles.dropdownLink}>
+                    Blog Grid
+                  </a>
+                  <a href="#BlogDetails" className={styles.dropdownLink}>
+                    Blog Details
+                  </a>
+                </div>
+              )}
+            </div>/
+
+
+            <div
+              className={styles.navLink}
+              onMouseEnter={() => toggleDropdown("contacts", true)}
+              onMouseLeave={() => toggleDropdown("contacts", false)}
+            >
+              Contacts
+            </div>
           </nav>
         </div>
       </div>
