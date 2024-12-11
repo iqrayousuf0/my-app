@@ -95,3 +95,90 @@
   color: #8f97ab;
 
 }
+
+ @media (max-width: 768px) {
+
+  /* Top Header */
+  .topHeaderInner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .topHeaderText {
+    font-size: 18px;
+    /* Adjust font size */
+    margin-bottom: 10px;
+    /* Add spacing between text and icons */
+  }
+
+  .topHeaderIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .topHeaderIcons img {
+    margin-right: 0;
+    /* Remove extra spacing for cleaner center alignment */
+    height: 25px;
+    /* Slightly larger for better visibility */
+  }
+
+  /* Main Header */
+  .mainHeader {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+    /* Slightly larger for emphasis */
+    margin-bottom: 15px;
+    /* Space between logo and navigation links */
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navLink {
+    font-size: 18px;
+    /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Top Header */
+  .topHeaderText {
+    font-size: 16px;
+    /* Further reduce font size */
+  }
+
+  .topHeaderIcons img {
+    height: 20px;
+    /* Adjust icon size */
+  }
+
+  /* Main Header */
+  .logo {
+    font-size: 24px;
+    /* Adjust font size */
+  }
+
+  .navLinks {
+    gap: 10px;
+    /* Reduce gap for smaller screens */
+  }
+
+  .navLink {
+    font-size: 16px;
+    /* Adjust font size */
+  }
+}

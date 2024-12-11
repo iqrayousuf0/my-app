@@ -20,7 +20,7 @@ function Proj() {
     <div>
       <section className={styles.projects_section}>
         <img
-          src="/images/graph.jpg"
+          src="/images/project1.jpg"
           alt="Background"
           className={styles.background_image}
         />
