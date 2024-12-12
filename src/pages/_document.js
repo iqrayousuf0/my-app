@@ -1,5 +1,7 @@
 import Footer from "@/components/footer";
 import Navi from "@/components/header";
+
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 
@@ -8,9 +10,12 @@ export default function Document() {
 
     <Html lang="en">
 
-      <Head />
+      <Head >
+          {/* <Navi /> */}  
+        </Head>
       <body>
-        <Navi />
+     
+      
         <Main />
         <NextScript />
         <Footer />

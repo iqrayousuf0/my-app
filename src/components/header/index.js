@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 import styles from "./header.module.css";
+import { useRouter } from "next/router";
+
 
 const Navi = () => {
   const [dropdownVisible, setDropdownVisible] = useState({
@@ -17,6 +19,11 @@ const Navi = () => {
       ...prev,
       [menu]: state,
     }));
+  };
+  const router = useRouter();
+
+  const goToProjects = () => {
+    router.push("/projects/projects"); // Programmatically navigate to '/projects'
   };
 
   return (
@@ -133,11 +140,11 @@ const Navi = () => {
             >
               Portfolio
               {dropdownVisible.portfolio && (
-                <div className={styles.dropdownMenu}>
+                <div onClick={goToProjects} className={styles.dropdownMenu}>
                   {/* Update the link to use Next.js Link component */}
-                  <Link href="/Proj" className={styles.dropdownLink}>
+                  {/* <Link href="/projects" className={styles.dropdownLink}> */}
                     Projects
-                  </Link>
+                  {/* </Link> */}
                 </div>
               )}
             </div>/

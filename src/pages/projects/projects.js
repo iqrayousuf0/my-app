@@ -4,7 +4,7 @@ import styles from "@/styles/projects.module.css";
 import CardsData from "./cardData/cardsData";
 
 
-function Proj() {
+function Project() {
   // Array of card data (images and texts)
   // const cardsData = [
   //   { imgSrc: "/images/card1.jpg", text: "Business Meeting" },
@@ -49,4 +49,4 @@ function Proj() {
   );
 }
 
-export default Proj;
+export default Project;
