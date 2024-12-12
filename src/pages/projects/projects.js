@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/projects.module.css";
 // import Navi from "../../components/header";
-import CardsData from "./cardData/cardsDataa";
+import CardsData from "./cardData/cardsData";
 
 
 function Proj() {
