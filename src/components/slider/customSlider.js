@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./slider.module.css";  // Import CSS module
+ 
 
 function CustomCarousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);

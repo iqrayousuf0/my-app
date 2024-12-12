@@ -5,7 +5,7 @@ import CardsData from "./cardsData";
 import Footer from "../components/footer";
 
 
-function Proj() {
+function Project() {
   // Array of card data (images and texts)
   // const cardsData = [
   //   { imgSrc: "/images/card1.jpg", text: "Business Meeting" },
@@ -52,4 +52,4 @@ function Proj() {
   );
 }
 
-export default Proj;
+export default Project;

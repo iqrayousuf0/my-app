@@ -1,6 +1,13 @@
 import "@/styles/globals.css";
+import Navi from "@/components/header";
 
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function App({ Component, pageProps }) {
+  return (
+    <>
+      <Navi />
+      <Component {...pageProps} />
+    </>
+  );
 }
+
+export default App;
