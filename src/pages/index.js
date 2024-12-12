@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <>
-      <Navi />
+      {/* <Navi /> */}
       <CustomSlider>
         {images.map((image, index) => {
           return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
@@ -25,7 +25,7 @@ const App = () => {
 
       <CardsData />
       
-      <Footer />
+    
     </>
   );
 };

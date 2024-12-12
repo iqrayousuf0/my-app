@@ -135,7 +135,7 @@ const Navi = () => {
               {dropdownVisible.portfolio && (
                 <div className={styles.dropdownMenu}>
                   {/* Update the link to use Next.js Link component */}
-                  <Link href="/projects" className={styles.dropdownLink}>
+                  <Link href="/Proj" className={styles.dropdownLink}>
                     Projects
                   </Link>
                 </div>
