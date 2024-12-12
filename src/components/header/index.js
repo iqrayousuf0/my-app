@@ -79,7 +79,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div>/
 
             <div
               className={styles.navLink}
@@ -103,7 +103,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div>/
 
             <div
               className={styles.navLink}
@@ -124,7 +124,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div>/
 
             <div
               className={styles.navLink}
@@ -140,7 +140,7 @@ const Navi = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div>/
 
             <div
               className={styles.navLink}
@@ -161,7 +161,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div>/
 
             <div
               className={styles.navLink}
