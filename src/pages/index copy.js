@@ -1,13 +1,13 @@
 import React from "react";
 import Navi from "@/components/header";
 import ExploreBlogsHeader from '@/components/explore';
-import BlogList from '@/components/blogs';
+import BlogList from '@/components/aboutus';
 import Questions from "@/components/faqs";
 import Footer from "@/components/footer";
 import Head  from "next/head";
 import KashmirPackages from "@/components/packages";
 import Tour from "@/components/tourPackage";
-import BackgroundSection from "@/components/fixed";
+import BackgroundSection from "@/components/solutions";
 
 const App = () => {
   return (

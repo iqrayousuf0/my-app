@@ -4,6 +4,7 @@ import Navi from "../components/header";
 
 function Proj() {
   // Array of card data (images and texts)
+  
   const cardsData = [
     { imgSrc: "/images/card1.jpg", text: "Business Meeting" },
     { imgSrc: "/images/card2.jpg", text: "Creative Solutions" },
