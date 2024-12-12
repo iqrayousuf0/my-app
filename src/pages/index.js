@@ -6,8 +6,12 @@ import CustomSlider from "../components/slider/customSlider";
 import Footer from "@/components/footer";
 import Component from "@/components/solutions";
 import AboutUs from "@/components/aboutus";
+import CardsData from "./projects/cardData/cardsData.js";
+
 
 const App = () => {
+ 
+
   return (
     <>
       <Navi />
@@ -18,6 +22,9 @@ const App = () => {
       </CustomSlider>
       <Component />
       <AboutUs />
+
+      <CardsData />
+      
       <Footer />
     </>
   );

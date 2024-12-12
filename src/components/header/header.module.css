@@ -82,6 +82,10 @@
 
 
 }
+.dropdownMenu a{
+  font-size: 16px;
+  /* font-weight: 700; */
+}
 
 .dropdownLink {
   text-decoration: none;
@@ -172,13 +176,10 @@
     /* Adjust font size */
   }
 
-  .navLinks {
-    gap: 10px;
-    /* Reduce gap for smaller screens */
-  }
 
   .navLink {
-    font-size: 16px;
-    /* Adjust font size */
+    font-size: 14px;
+    gap: 10px;
+  
   }
 }
