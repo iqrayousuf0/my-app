@@ -24,11 +24,16 @@ const FAQs = () => {
       answer:
         "We provide strategic consulting, market analysis, and tailored solutions for your business challenges.",
     },
+    {
+      question: "What industries do you specialize in?",
+      answer:
+        "A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe apartment.",
+    },
   ];
 
   return (
     <div className={styles.container}>
-      {/* Header Section */}
+      {/* Background Header Section */}
       <div className={styles.header}>
         <img
           src="./images/feqsBac.jpg"
@@ -36,15 +41,18 @@ const FAQs = () => {
           className={styles.headerImage}
         />
         <div className={styles.headerOverlay}>
-          <h2 className={styles.title}>FAQ'S</h2>
-          <p className={styles.subtitle}>
-            A tale of a fateful trip that started from this tropic port aboard
-            this tiny ship today stillers.
-          </p>
+          <div className={styles.headerOverlayContent}>
+            <h2 className={styles.title}>FAQ'S</h2>
+            <hr className={styles.divider} />
+            <p className={styles.subtitle}>
+              A tale of a fateful trip that started from this tropic port aboard
+              this tiny ship today stillers.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Content Section */}
+      {/* Content Section: Video + FAQ */}
       <div className={styles.content}>
         {/* Video Section */}
         <div className={styles.videoSection}>
@@ -77,6 +85,8 @@ const FAQs = () => {
                   →
                 </span>
               </div>
+              <div className={styles.questionLine}></div>{" "}
+              {/* Line under the question */}
               <div
                 className={`${styles.answer} ${
                   activeIndex === index ? styles.show : ""
