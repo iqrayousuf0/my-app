@@ -179,8 +179,7 @@ const Navi = () => {
               Contacts
             </div>
           </nav>
-        </div>
-        <div className={styles.navrighttwoicons}>
+          <div className={styles.navrighttwoicons}>
           <div className={styles.navRightIcon1}>
           
            <img src="./images/cart.png"/>
@@ -189,6 +188,8 @@ const Navi = () => {
          <img src="./images/search.png"/>
          </div>
       </div>
+        </div>
+    
       </div>
     </div>
   );

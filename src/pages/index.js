@@ -7,6 +7,8 @@ import Footer from "@/components/footer";
 import Component from "@/components/solutions";
 import AboutUs from "@/components/aboutus";
 import CardsData from "./projects/cardData/cardsData.js";
+import FAQs from "@/components/faqshome/faqs";
+
 
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
       <AboutUs />
 
       <CardsData />
+      <FAQs/>
       
     
     </>

@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "@/styles/projects.module.css";
-import Navi from "../components/header";
-import CardsData from "./cardsData";
-import Footer from "../components/footer";
+
+
 
 
 function Project() {
@@ -30,9 +29,9 @@ function Project() {
         <div className={styles.overlay}></div>
         <h1 className={styles.section_title}>PROJECTS</h1>
       </section>
-      <CardsData />
-      < Navi />
-      <Footer />
+      {/* <CardsData /> */}
+      {/* < Navi /> */}
+      {/* <Footer /> */}
       {/* <section className={styles.image_cards_section}>
         {cardsData.map((card, index) => (
           <div key={index} className={styles.image_card}>
