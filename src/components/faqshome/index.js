@@ -52,9 +52,8 @@ const FAQs = () => {
         </div>
       </div>
 
-      {/* Content Section: Video + FAQ */}
+      
       <div className={styles.content}>
-        {/* Video Section */}
         <div className={styles.videoSection}>
           <iframe
             className={styles.video}
@@ -66,7 +65,7 @@ const FAQs = () => {
           ></iframe>
         </div>
 
-        {/* FAQ Section */}
+
         <div className={styles.faqSection}>
           {faqs.map((faq, index) => (
             <div
@@ -86,7 +85,7 @@ const FAQs = () => {
                 </span>
               </div>
               <div className={styles.questionLine}></div>{" "}
-              {/* Line under the question */}
+        
               <div
                 className={`${styles.answer} ${
                   activeIndex === index ? styles.show : ""
