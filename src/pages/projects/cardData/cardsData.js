@@ -3,7 +3,7 @@ import styles from "./cardD.module.css"
 
 
 function CardsData() {
-  // Array of card data (images and texts)
+  
   
   const cardsData = [
     { imgSrc: "/images/card1.jpg", text: "Business Meeting" },
