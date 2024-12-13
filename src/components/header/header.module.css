@@ -1,8 +1,8 @@
 /* Top Header */
 .topHeader {
-  background-color: #00274e;
+  background-color: #000f32;;
   color: #fff;
-  padding: 17px 20px;
+  padding: 14px 18px;
 }
 
 .topHeaderInner {
@@ -20,8 +20,8 @@
 
 .topHeaderIcons img {
   margin-right: 10px;
-  mix-blend-mode: multiply;
-  height: 20px;
+  /* mix-blend-mode: multiply; */
+  height: 25px;
 }
 
 .icon {
