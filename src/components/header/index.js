@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import { useRouter } from "next/router";
 
 
+
 const Navi = () => {
   const [dropdownVisible, setDropdownVisible] = useState({
     pages: false,
@@ -41,7 +42,7 @@ const Navi = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img src="./images/facebook.jpeg" alt="Facebook" />
+              <img src="./images/fb.png" alt="Facebook" />
             </a>
             <a
               href="https://twitter.com"
@@ -49,16 +50,17 @@ const Navi = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img src="./images/twitter.jpeg" alt="Twitter" />
+              <img src="./images/tw.png" alt="Twitter" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img src="./images/linkedin.jpeg" alt="LinkedIn" />
+              <img src="./images/ln.png" alt="Twitter" />
             </a>
+           
           </div>
         </div>
       </div>

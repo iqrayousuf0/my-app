@@ -12,9 +12,9 @@ function CardsData() {
     { imgSrc: "/images/cad5.jpg", text: "Team Collaboration" },
     { imgSrc: "/images/cad6.jpg", text: "Product Design" },
     { imgSrc: "/images/cad4.jpg", text: "Innovative Ideas" },
-     { imgSrc: "/images/cad13.jpg", text: "Client Presentation" },
-    { imgSrc: "/images/cad14.jpg", text: "Strategy Planning" },
-     { imgSrc: "/images/cad15.jpg", text: "Project Development" },
+    //  { imgSrc: "/images/cad13.jpg", text: "Client Presentation" },
+    // { imgSrc: "/images/cad14.jpg", text: "Strategy Planning" },
+    //  { imgSrc: "/images/cad15.jpg", text: "Project Development" },
   ];
 
   return (
