@@ -1,0 +1,118 @@
+
+.newsSection {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+  
+}
+
+.titleWrapper {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #232323;
+  margin: 15px;
+}
+
+.greyLine {
+  width: 50px;
+  height: 4px;
+  background-color: rgb(161, 159, 159);
+  margin: 10px auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.description {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 60px 
+}
+
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px);
+  background: none;
+  text-align: left;
+}
+
+
+.imageWrapper {
+  position: relative;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s ease-in-out;
+}
+.image:hover{
+  transform: scale(1.18);
+}
+
+.dateButton {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #003366;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.textWrapper {
+  margin-top: 10px;
+}
+
+.subtitle {
+  font: 20px "Nunito Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3c3c3c;
+  cursor: pointer;
+  
+}
+.subtitle:hover{
+  color: #011931;
+}
+
+.readMore {
+  font-size: 14px;
+  font-weight: bold;
+  color: #033160;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

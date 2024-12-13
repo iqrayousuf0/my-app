@@ -1,0 +1,54 @@
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+ 
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+  margin-bottom: 10px;
+}
+
+.locationLogo {
+  display: inline-block;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  mix-blend-mode: multiply;
+}

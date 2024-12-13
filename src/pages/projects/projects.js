@@ -3,6 +3,8 @@ import styles from "@/styles/projects.module.css";
 
 
 
+// import Navi from "../../components/header";
+import CardsData from "./cardData/cardsData";
 
 function Project() {
   // Array of card data (images and texts)
@@ -32,12 +34,13 @@ function Project() {
       {/* <CardsData /> */}
       {/* < Navi /> */}
       {/* <Footer /> */}
+      <CardsData />
       {/* <section className={styles.image_cards_section}>
         {cardsData.map((card, index) => (
           <div key={index} className={styles.image_card}>
             <img
               src={card.imgSrc}
-              alt={`Card ${index + 1}`}
+              alt={⁠ Card ${index + 1} ⁠}
               className={styles.card_image}
             />
             <div className={styles.card_text}>{card.text}</div>

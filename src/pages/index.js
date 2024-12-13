@@ -7,10 +7,11 @@ import Footer from "@/components/footer";
 import Component from "@/components/solutions";
 import AboutUs from "@/components/aboutus";
 import CardsData from "./projects/cardData/cardsData.js";
-import FAQs from "@/components/faqshome/faqs";
-
-
-
+import FAQs from "@/components/faqshome";
+import WhyChooseUs from "@/components/choose";
+import  Banner from "@/components/plan";
+import News from "@/components/news";
+import Map from "@/components/hello";
 const App = () => {
  
 
@@ -24,11 +25,12 @@ const App = () => {
       </CustomSlider>
       <Component />
       <AboutUs />
-
       <CardsData />
-      <FAQs/>
-      
-    
+      <FAQs />
+      <WhyChooseUs />
+      < Banner />
+      <News />
+      <Map />
     </>
   );
 };

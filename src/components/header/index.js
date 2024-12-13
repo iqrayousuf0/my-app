@@ -23,7 +23,7 @@ const Navi = () => {
   const router = useRouter();
 
   const goToProjects = () => {
-    router.push("/projects/projects"); // Programmatically navigate to '/projects'
+    router.push("/projects/projects"); 
   };
 
   return (

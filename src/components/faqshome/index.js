@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./FAQs.module.css";
+import styles from "./faqshome.module.css";
 
 const FAQs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -67,10 +67,7 @@ const FAQs = () => {
                 activeIndex === index ? styles.active : ""
               }`}
             >
-              <div
-                className={styles.question}
-                onClick={() => toggleFAQ(index)}
-              >
+              <div className={styles.question} onClick={() => toggleFAQ(index)}>
                 {faq.question}
                 <span
                   className={`${styles.arrow} ${
