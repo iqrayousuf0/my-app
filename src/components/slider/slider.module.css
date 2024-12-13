@@ -33,6 +33,10 @@
   left: 0;
 } */
  .slider__overlaytext{
+  /* width: 80%; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 33%;
@@ -128,3 +132,4 @@
   /* height: ; */
   height: auto;
 }
+

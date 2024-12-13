@@ -88,9 +88,12 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className={styles.footer_bottom}>
+      <div   className={styles.footer_bottombk}>
+        <div   className={styles.footer_bottom}>
         <div className={styles.bottom_content}>
           <p>©️ Copyrights 2018. All Rights Reserved.</p>
+          </div>
+          <div>
           <nav className={styles.footer_nav}>
             <a href="#about" className={styles.nav_link}>
               About
@@ -105,6 +108,7 @@ const Footer = () => {
               Contact
             </a>
           </nav>
+        </div>
         </div>
       </div>
     </footer>

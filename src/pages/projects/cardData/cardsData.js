@@ -19,7 +19,12 @@ function CardsData() {
 
   return (
     <div>
-    
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardstitle}>OUR CASES</div>
+        <div className={styles.cardsline}></div>
+        <div className={styles.cardsdesc}>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</div>
+       
+       </div>
       <section className={styles.image_cards_section}>
         {cardsData.map((card, index) => (
           <div key={index} className={styles.image_card}>
