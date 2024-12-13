@@ -8,6 +8,7 @@
 .topHeaderInner {
   width: 80%;
   margin: auto;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,17 +88,38 @@
   /* font-weight: 700; */
 }
 
+
 .dropdownLink {
   text-decoration: none;
-  color: #00274e;
+  color: #8f97ab;
   padding: 10px 20px;
-  transition: background-color 0.3s, color 0.3s;
+  background: linear-gradient(to right, #ffffff, #ffffff  50%,  #00274e 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s, color 0.3s;
 }
 
 .dropdownLink:hover {
-  background-color: #f0f0f0;
-  color: #8f97ab;
+  background-position: -100% 0;
+  color: #fff;
+}
 
+.navrighttwoicons {
+  display: flex;
+
+}
+.navrighttwoicons:hover{
+  cursor: pointer;
+}
+.navRightIcon1 img{
+ 
+  height: 35px;
+}
+.navRightIcon2{
+  padding: 5px;
+}
+.navRightIcon2 img{
+  margin-left: 10px;
+  height: 25px;
 }
 
  @media (max-width: 768px) {

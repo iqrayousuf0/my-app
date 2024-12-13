@@ -32,6 +32,36 @@
   position: absolute;
   left: 0;
 } */
+ .slider__overlaytext{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+ }
+ .slider__overlaytext1{
+  font-size: 26px;
+  line-height: 35px;
+  color: #556382;
+  font-weight: 300;
+ }
+ .slider__overlaytext2{
+  text-transform: uppercase;
+    color: #556382;
+    padding: 30px 0 35px 0;
+    font-size: 26px;
+    line-height: 35px;
+ }
+ .slider__overlaytext3{
+  font-size: 20px;
+  background: #fff;
+  color: #556382;
+  padding: 15px;
+  width: 15%;
+  font-weight: 900px;
+  border-radius: 10px;
+ }
 
 .container__slider__links {
   position: absolute;

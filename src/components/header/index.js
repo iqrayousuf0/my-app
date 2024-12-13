@@ -140,11 +140,12 @@ const Navi = () => {
             >
               Portfolio
               {dropdownVisible.portfolio && (
-                <div onClick={goToProjects} className={styles.dropdownMenu}>
+                <div  className={styles.dropdownMenu}>
+                 
                   {/* Update the link to use Next.js Link component */}
-                  {/* <Link href="/projects" className={styles.dropdownLink}> */}
+                  <Link  href="/projects/projects" className={styles.dropdownLink}>
                     Projects
-                  {/* </Link> */}
+                  </Link>
                 </div>
               )}
             </div>/
@@ -179,6 +180,15 @@ const Navi = () => {
             </div>
           </nav>
         </div>
+        <div className={styles.navrighttwoicons}>
+          <div className={styles.navRightIcon1}>
+          
+           <img src="./images/cart.png"/>
+         </div>
+         <div className={styles.navRightIcon2}>
+         <img src="./images/search.png"/>
+         </div>
+      </div>
       </div>
     </div>
   );

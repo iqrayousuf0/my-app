@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./slider.module.css";  // Import CSS module
- 
+import styles from "./slider.module.css"; // Import CSS module
 
 function CustomCarousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -54,7 +53,7 @@ function CustomCarousel({ children }) {
 
   return (
     <div
-      className={styles.container__slider}  // Use styles object here
+      className={styles.container__slider} // Use styles object here
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
@@ -62,7 +61,9 @@ function CustomCarousel({ children }) {
         return (
           <div
             className={
-              `${styles.slider__item} ${styles[`slider__item-active-${activeIndex + 1}`]}`  // Dynamic class handling with template literals
+              `${styles.slider__item} ${
+                styles[`slider__item-active-${activeIndex + 1}`]
+              }` // Dynamic class handling with template literals
             }
             key={index}
           >
@@ -71,7 +72,9 @@ function CustomCarousel({ children }) {
         );
       })}
 
-      <div className={styles.container__slider__links}>  {/* CSS module */}
+      <div className={styles.container__slider__links}>
+        {" "}
+        {/* CSS module */}
         {children.map((item, index) => {
           return (
             <button
@@ -88,6 +91,19 @@ function CustomCarousel({ children }) {
             ></button>
           );
         })}
+      </div>
+      <div className={styles.slider__overlaytext}>
+        <div className={styles.slider__overlaytext1}>
+          The government they survive artical of fortune HIGH-QUALITY MARKET
+        </div>
+        <div className={styles.slider__overlaytext2}>
+          <h1>
+            HIGH-QUALITY MARKET <br />
+            <br />
+            EXPERIENCES
+          </h1>
+        </div>
+        <div className={styles.slider__overlaytext3}>ABOUT US</div>
       </div>
 
       {/* <button
