@@ -1,0 +1,103 @@
+.team-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+  
+  .team-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .team-card {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .team-card:hover .team-image {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 139, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .team-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .social-icons a  i img{
+    height: 30px;
+    border-radius: 18px;
+    mix-blend-mode: lighten;
+  background-color: white; 
+  }
+  
+  .social-icons a:hover {
+    color: #00acee; /* Twitter blue for hover effect */
+  }
+  
+  .team-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .team-role {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+  }
+  

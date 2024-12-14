@@ -11,7 +11,8 @@
 }
 .cardstitle{
   font-size: 38px;
-  color: #001138;
+  /* color: #001138; */
+  color: #333;
   font-weight: 900;
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 22px;

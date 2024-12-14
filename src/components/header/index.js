@@ -26,6 +26,9 @@ const Navi = () => {
   const goToProjects = () => {
     router.push("/projects/projects"); 
   };
+  // const goToOurteam = () => {
+  //   router.push("/ourteam/ourteam"); 
+  // };
 
   const goToabout = () => {
     router.push("/about/aboutHead");
@@ -47,7 +50,7 @@ const Navi = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img src="./images/fb.png" alt="Facebook" />
+              <img src="./images/fbbb.png" alt="Facebook" />
             </a>
             <a
               href="https://twitter.com"
@@ -105,10 +108,17 @@ const Navi = () => {
                   <Link  href="/about/aboutHead" className={styles.dropdownLink}>
                     About Us
                   </Link>
+                  {/* <a href="#about" className={styles.dropdownLink}></a>
+                  <a onClick={goToabout} className={styles.dropdownLink}>
+                    About Us
+                  </a> */}
 
                   <a href="#team" className={styles.dropdownLink}>
                     Our Team
                   </a>
+                  {/* <a onClick={goToOurteam} className={styles.dropdownLink}>
+                    Our Team
+                  </a> */}
                   <a href="#faq" className={styles.dropdownLink}>
                     FAQs
                   </a>
