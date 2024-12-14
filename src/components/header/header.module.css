@@ -21,7 +21,9 @@
 .topHeaderIcons img {
   margin-right: 10px;
   /* mix-blend-mode: multiply; */
-  height: 25px;
+  mix-blend-mode: lighten;
+  background-color: white; 
+  height: 28px;
 }
 
 .icon {
