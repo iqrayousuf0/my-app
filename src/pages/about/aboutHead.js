@@ -61,11 +61,86 @@ const AboutPage = () => {
         </div>
       </div>
 
-      
-{/* ratings */}
+      {/* Hero Section */}
+
+      <div>
+        <div className={styles.heroContainer}>
+          <div className={styles.overlay}></div>
+          <img
+            src="/images/card3.jpg" // Replace with your image path
+            alt="Background"
+            className={styles.backgroundImageee}
+          />
+          <div className={styles.heroContent}>
+            <h1 className={styles.heading}>WE ARE ALWAYS BEST</h1>
+            <div className={styles.line}></div>
+            <p className={styles.descriptionnn}>
+              A tale of a fateful trip that started from this tropic port aboard
+              this tiny ship today stillers.
+            </p>
+          </div>
+        </div>
+
+        {/* Card Section */}
+        <div className={styles.cardWrapper}>
+          <div className={styles.cardContainer}>
+            <div className={styles.cardContent}>
+              {/* Left side with cards */}
+              <div className={styles.cardList}>
+                <div className={styles.cardRow}>
+                  <img
+                    src="/images/6.png" // Replace with your icon path
+                    alt="Icon"
+                    className={styles.icon}
+                  />
+                  <div>
+                    <h3 className={styles.cardTitle}>Best Strategy</h3>
+                    <p className={styles.cardDescription}>
+                      The Love Boat soon will be making another run. Strange
+                      tools enter new worlds.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.cardRow}>
+                  <img src="/images/7.png" alt="Icon" className={styles.icon} />
+                  <div>
+                    <h3 className={styles.cardTitle}>High-Quality Services</h3>
+                    <p className={styles.cardDescription}>
+                      The Love Boat soon will be making another run. Strange
+                      tools enter new worlds.
+                    </p>
+                  </div>
+                </div>
+
+                <div className={styles.cardRow}>
+                  <img src="/images/8.png" alt="Icon" className={styles.icon} />
+                  <div>
+                    <h3 className={styles.cardTitle}>Friendly Support</h3>
+                    <p className={styles.cardDescription}>
+                      The Love Boat soon will be making another run. Strange
+                      tools enter new worlds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right side image */}
+              <div className={styles.imageSection}>
+                <img
+                  src="/images/history.jpg" // Replace with your image path
+                  alt="Team"
+                  className={styles.rightImage}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ratings */}
       <div className={styles.containerr}>
         <div className={styles.contentWrapper}>
-        
           <div className={styles.numberRow}>
             <div className={styles.numberItem}>
               <h1 className={styles.mainText}>30+</h1>
@@ -89,6 +164,74 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+
+      <div className={styles.newsSection}>
+        {/* Title Section */}
+        <div className={styles.titleWrapper}>
+          <h2 className={styles.tittle}>CORE VALUES</h2>
+          <div className={styles.greyLine}></div>
+        </div>
+
+        {/* Card Grid Section */}
+        <div className={styles.cardGrid}>
+          {[
+            {
+              imgSrc: "/images/card1.jpg",
+              subtitle: "Kind of torture to have to watch the show the day",
+              description:
+                "A tale of a fateful trip that started from this tropic port aboard the ship.",
+            },
+            {
+              imgSrc: "/images/card2.jpg",
+              subtitle: "Trouble with law since to eastern side of yellow mint",
+              description:
+                "Make the best of things, it's an uphill climb for long time.",
+            },
+            {
+              imgSrc: "/images/card3.jpg",
+              subtitle:
+                "Make the best of things, it's an uphill climb long time",
+              description:
+                "A tale of a fateful trip that started from this tropic port aboard the ship.",
+            },
+          ].map((item, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <img
+                  src={item.imgSrc}
+                  alt={`News ${index + 1}`}
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.textContent}>
+                <h3 className={styles.subtitle}>{item.subtitle}</h3>
+                <p className={styles.description}>{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+
+
+      {/* brands */}
+
+    <div className={styles.conttainer}>
+      <div className={styles.text}>OUR PARTNERS</div>
+      <div className={styles.imageWrapperr}>
+        <img src="/images/cod1.jpg" alt="Image 1" className={styles.immage} />
+        <img src="/images/cod2.jpg" alt="Image 2" className={styles.immage} />
+        <img src="/images/cod3.jpg" alt="Image 3" className={styles.immage} />
+        <img src="/images/cod4.jpg" alt="Image 4" className={styles.immage} />
+        <img src="/images/cod5.jpg" alt="Image 5" className={styles.immage} />
+      </div>
+    </div>
+ 
+
+
+
+
     </div>
   );
 };

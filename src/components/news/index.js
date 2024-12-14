@@ -41,7 +41,7 @@ function News() {
   useEffect(() => {
     const interval = setInterval(() => {
       setVisibleNews((prevNews) => {
-        // Shift the cards left and add a new card at the end
+    
         const nextIndex = index < allNewsItems.length ? index : 0;
         setIndex(nextIndex + 1);
         return [...prevNews.slice(1), allNewsItems[nextIndex]];
