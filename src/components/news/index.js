@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./news.module.css";
 
 function News() {
-  const newsItems = [
+  const allNewsItems = [
     {
       imgSrc: "/images/card1.jpg",
       date: "Apr 14, 2018",
@@ -16,7 +16,7 @@ function News() {
     {
       imgSrc: "/images/card3.jpg",
       date: "Mar 30, 2018",
-      subtitle: "make the best of things its an uphill climb long time",
+      subtitle: "Make the best of things, it's an uphill climb long time",
     },
     {
       imgSrc: "/images/cad13.jpg",
@@ -26,7 +26,7 @@ function News() {
     {
       imgSrc: "/images/cad14.jpg",
       date: "Jul 22, 2018",
-      subtitle: "make the best of things its an uphill climb long time",
+      subtitle: "Make the best of things, it's an uphill climb long time",
     },
     {
       imgSrc: "/images/cad15.jpg",
@@ -34,6 +34,22 @@ function News() {
       subtitle: "Kind of torture to have to watch the show the day",
     },
   ];
+
+  const [visibleNews, setVisibleNews] = useState(allNewsItems.slice(0, 3)); // Start with 3 cards
+  const [index, setIndex] = useState(3); // Next card index
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleNews((prevNews) => {
+        // Shift the cards left and add a new card at the end
+        const nextIndex = index < allNewsItems.length ? index : 0;
+        setIndex(nextIndex + 1);
+        return [...prevNews.slice(1), allNewsItems[nextIndex]];
+      });
+    }, 5000); // Move every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [index, allNewsItems]);
 
   return (
     <div className={styles.newsSection}>
@@ -48,27 +64,34 @@ function News() {
       </div>
 
       {/* Slider Section */}
+      <div className={styles.sliderWrapper}>
       <div className={styles.slider}>
-        {newsItems.map((item, index) => (
-          <div key={index} className={styles.card}>
-            {/* Image Card */}
-            <div className={styles.imageWrapper}>
-              <img
-                src={item.imgSrc}
-                alt={`News ${index + 1}`}
-                className={styles.image}
-              />
-              <div className={styles.dateButton}>{item.date}</div>
-            </div>
-            {/* Title and Read More Outside the Card */}
-            <div className={styles.textWrapper}>
-              <h3 className={styles.subtitle}>{item.subtitle}</h3>
-              <a href="#" className={styles.readMore}>
-                READ MORE
-              </a>
-            </div>
-          </div>
-        ))}
+  {visibleNews.map((item, i) => (
+    <div
+      key={i}
+      className={styles.card}
+      style={{ animationDelay: `${i * 0.3}s` }} // Stagger animations
+    >
+      {/* Image Card */}
+      <div className={styles.imageWrapper}>
+        <img
+          src={item.imgSrc}
+          alt={`News ${i + 1}`}
+          className={styles.image}
+        />
+        <div className={styles.dateButton}>{item.date}</div>
+      </div>
+      {/* Title and Read More */}
+      <div className={styles.textWrapper}>
+        <h3 className={styles.subtitle}>{item.subtitle}</h3>
+        <a href="#" className={styles.readMore}>
+          READ MORE
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
-
 .newsSection {
-  width: 80%;
+  width: 90%;
   margin: 60px auto;
   text-align: center;
-  
+  overflow: hidden;
 }
 
 .titleWrapper {
@@ -23,30 +22,35 @@
   width: 50px;
   height: 4px;
   background-color: rgb(161, 159, 159);
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
   border-radius: 16px;
 }
 
 .description {
   color: #666;
   font-size: 16px;
-  margin-bottom: 60px 
+  margin-bottom: 60px;
 }
 
+.sliderWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 .slider {
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding */
 }
 
 .card {
   flex: 0 0 calc(33.33% - 20px);
-  background: none;
   text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-right: 10px;
+  opacity: 0; /* Start with invisible */
+  animation: slideIn 0.8s ease-out forwards; /* Smooth slide-in effect */
 }
 
 
@@ -63,10 +67,6 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.9s ease-in-out;
-}
-.image:hover{
-  transform: scale(1.18);
 }
 
 .dateButton {
@@ -79,20 +79,18 @@
   padding: 5px 10px;
   border-radius: 20px;
 }
+
 .textWrapper {
   margin-top: 10px;
 }
 
 .subtitle {
-  font: 20px "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
   color: #3c3c3c;
   cursor: pointer;
-  
-}
-.subtitle:hover{
-  color: #011931;
 }
 
 .readMore {
@@ -101,18 +99,14 @@
   color: #033160;
   text-decoration: none;
   cursor: pointer;
-
 }
-@media screen and (max-width: 768px) {
-  .card {
-    flex: 0 0 calc(50% - 20px);
+@keyframes slideIn {
+  0% {
+    transform: translateX(100px); /* Start slightly off-screen to the right */
+    opacity: 0;
   }
-
-  .title {
-    font-size: 28px;
-  }
-
-  .description {
-    font-size: 14px;
+  100% {
+    transform: translateX(0); /* Slide back to its natural position */
+    opacity: 1;
   }
 }
