@@ -1,0 +1,213 @@
+.projects_section {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 50, 0.5);
+  z-index: 1;
+}
+
+.section_title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+
+}
+
+/* quality css part */
+
+.container {
+  font-family: Arial, sans-serif;
+}
+
+/* Blue Section */
+.blueSection {
+  color: white;
+  padding: 40px 20px;
+}
+
+.blueContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  float: left;
+  line-height: 40px;
+  color: #232323;
+  width: 27%;
+  font-size: 32px;
+}
+
+.verticalDivider {
+  width: 4px;
+  height: 80px;
+  background-color: grey;
+  margin: 0 20px;
+  border-radius: 8px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  flex: 1;
+  margin-right: 20px;
+  width: 52%;
+  color: #555555;
+}
+
+.freeQuoteButton {
+  background-color: #001a57;
+  color: #fff;
+  padding: 15px 35px;
+  border: none;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.freeQuoteButton:hover {
+  background-color: #011135;
+  color: #fff;
+}
+
+
+/* history section */
+.section_container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0;
+  height: 500px;
+  
+}
+
+.image_title_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+
+.section_image {
+  width: auto;
+ 
+height: 400px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+
+}
+
+.section_titlee {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #232323;
+}
+
+.grey_line {
+  width: 7%;
+  height: 4px;
+  border-radius: 8px;
+  background-color: grey;
+  margin-bottom: 15px;
+}
+
+.section_description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+.signature_imagee {
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+
+
+/* rating */
+.containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+}
+
+.contentWrapper {
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.numberRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.numberItem {
+  flex: 1;
+}
+
+.mainText {
+  font-size: 50px;
+  font-weight: 300;
+  color: rgb(7, 7, 52);
+  margin-bottom: 10px;
+  font-family: 'Nunito sans',sans-serif;
+}
+
+
+.smallDescription {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 10px;
+}

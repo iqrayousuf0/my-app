@@ -1,10 +1,8 @@
 import React from "react";
-import styles from "@/styles/projects.module.css";
+import styles from "./aboutHead.module.css";
 
-import CardsData from "./cardData/cardsData";
 
-function Project() {
-
+function Head() {
   return (
     <div>
       <section className={styles.projects_section}>
@@ -14,13 +12,12 @@ function Project() {
           className={styles.background_image}
         />
         <div className={styles.overlay}></div>
-        <h1 className={styles.section_title}>PROJECTS</h1>
+        <h1 className={styles.section_title}>ABOUT</h1>
       </section>
-    
-      <CardsData />
+
     
     </div>
   );
 }
 
-export default Project;
+export default Head;

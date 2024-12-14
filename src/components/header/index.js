@@ -27,6 +27,11 @@ const Navi = () => {
     router.push("/projects/projects"); 
   };
 
+  const goToabout = () => {
+    router.push("/about/aboutHead");
+  };
+ 
+
   return (
     <div>
       {/* Top Header */}
@@ -60,7 +65,6 @@ const Navi = () => {
             >
               <img src="./images/ln.png" alt="Twitter" />
             </a>
-           
           </div>
         </div>
       </div>
@@ -88,8 +92,8 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>/
-
+            </div>
+            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("pages", true)}
@@ -98,9 +102,10 @@ const Navi = () => {
               Pages
               {dropdownVisible.pages && (
                 <div className={styles.dropdownMenu}>
-                  <a href="#about" className={styles.dropdownLink}>
+                  <Link  href="/about/aboutHead" className={styles.dropdownLink}>
                     About Us
-                  </a>
+                  </Link>
+
                   <a href="#team" className={styles.dropdownLink}>
                     Our Team
                   </a>
@@ -112,8 +117,8 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>/
-
+            </div>
+            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("services", true)}
@@ -133,8 +138,8 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>/
-
+            </div>
+            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("portfolio", true)}
@@ -142,16 +147,18 @@ const Navi = () => {
             >
               Portfolio
               {dropdownVisible.portfolio && (
-                <div  className={styles.dropdownMenu}>
-                 
+                <div className={styles.dropdownMenu}>
                   {/* Update the link to use Next.js Link component */}
-                  <Link  href="/projects/projects" className={styles.dropdownLink}>
+                  <Link
+                    href="/projects/projects"
+                    className={styles.dropdownLink}
+                  >
                     Projects
                   </Link>
                 </div>
               )}
-            </div>/
-
+            </div>
+            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("blogs", true)}
@@ -171,8 +178,8 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>/
-
+            </div>
+            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("contacts", true)}
@@ -182,16 +189,14 @@ const Navi = () => {
             </div>
           </nav>
           <div className={styles.navrighttwoicons}>
-          <div className={styles.navRightIcon1}>
-          
-           <img src="./images/cart.png"/>
-         </div>
-         <div className={styles.navRightIcon2}>
-         <img src="./images/search.png"/>
-         </div>
-      </div>
+            <div className={styles.navRightIcon1}>
+              <img src="./images/cart.png" />
+            </div>
+            <div className={styles.navRightIcon2}>
+              <img src="./images/search.png" />
+            </div>
+          </div>
         </div>
-    
       </div>
     </div>
   );
