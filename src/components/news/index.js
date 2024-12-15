@@ -46,7 +46,7 @@ function News() {
         setIndex(nextIndex + 1);
         return [...prevNews.slice(1), allNewsItems[nextIndex]];
       });
-    }, 5000); 
+    }, 5000); // Move every 5 seconds
 
     return () => clearInterval(interval);
   }, [index, allNewsItems]);

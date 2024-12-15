@@ -38,6 +38,9 @@ const Navi = () => {
   const goToabout = () => {
     router.push("/about/aboutHead");
   };
+   const gotoblogList = () => {
+     router.push("/blogList/blogList");
+   };
  
 
   return (
@@ -79,7 +82,7 @@ const Navi = () => {
 
       <div className={styles.mainHeader}>
         <div className={styles.topHeaderInner}>
-          <div  onClick={gotohome}className={styles.logo}>
+          <div onClick={gotohome} className={styles.logo}>
             <img src="./images/charles.png" alt="Charles Logo" />
           </div>
 
@@ -92,7 +95,7 @@ const Navi = () => {
               Home
               {dropdownVisible.home && (
                 <div className={styles.dropdownMenu}>
-                  <a  onClick={gotohome} className={styles.dropdownLink}>
+                  <a onClick={gotohome} className={styles.dropdownLink}>
                     Home Version One
                   </a>
                   <a onClick={gotohome} className={styles.dropdownLink}>
@@ -110,7 +113,7 @@ const Navi = () => {
               Pages
               {dropdownVisible.pages && (
                 <div className={styles.dropdownMenu}>
-                  <Link  href="/about/aboutHead" className={styles.dropdownLink}>
+                  <Link href="/about/aboutHead" className={styles.dropdownLink}>
                     About Us
                   </Link>
                   {/* <a href="#about" className={styles.dropdownLink}></a>
@@ -148,7 +151,10 @@ const Navi = () => {
                   <a href="#ServicesVersionTwo" className={styles.dropdownLink}>
                     Services Version Two
                   </a>
-                  <a onClick={gotoserviceDetails} className={styles.dropdownLink}>
+                  <a
+                    onClick={gotoserviceDetails}
+                    className={styles.dropdownLink}
+                  >
                     Services Details
                   </a>
                 </div>
@@ -182,7 +188,10 @@ const Navi = () => {
               Blogs
               {dropdownVisible.blogs && (
                 <div className={styles.dropdownMenu}>
-                  <a href="#BlogList" className={styles.dropdownLink}>
+                  <a
+                    onClick={gotoblogList}
+                    className={styles.dropdownLink}
+                  >
                     Blog List
                   </a>
                   <a href="#BlogGrid" className={styles.dropdownLink}>

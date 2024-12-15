@@ -14,6 +14,9 @@ const serviceDetails = () => {
         <div className={styles.overlay}></div>
         <h1 className={styles.section_title}>SERVICE DETAILS</h1>
       </section>
+
+
+      
       <div className={styles.container}>
       {/* Main Content */}
       <div className={styles.content}>
