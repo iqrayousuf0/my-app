@@ -35,8 +35,8 @@ function News() {
     },
   ];
 
-  const [visibleNews, setVisibleNews] = useState(allNewsItems.slice(0, 3)); // Start with 3 cards
-  const [index, setIndex] = useState(3); // Next card index
+  const [visibleNews, setVisibleNews] = useState(allNewsItems.slice(0, 3)); 
+  const [index, setIndex] = useState(3); 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,7 +46,7 @@ function News() {
         setIndex(nextIndex + 1);
         return [...prevNews.slice(1), allNewsItems[nextIndex]];
       });
-    }, 5000); // Move every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [index, allNewsItems]);
