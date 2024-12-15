@@ -1,4 +1,12 @@
 /* Top Header */
+.navposition{
+  position: fixed;
+ width: 100%;
+  z-index: 999;
+  top: 0;
+  /* overflow: hidden; */
+
+}
 .topHeader {
   background-color: #000f32;;
   color: #fff;

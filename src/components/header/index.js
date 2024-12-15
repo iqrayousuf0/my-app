@@ -44,7 +44,7 @@ const Navi = () => {
  
 
   return (
-    <div>
+    <div className={styles.navposition}>
       {/* Top Header */}
       <div className={styles.topHeader}>
         <div className={styles.topHeaderInner}>

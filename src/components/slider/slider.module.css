@@ -2,13 +2,13 @@
   position: relative;
   width: 100%;
   padding: 0;
+  z-index: 3;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: black;
 }
 
 .container__slider > button {
@@ -23,44 +23,34 @@
   color: black;
 }
 
-/* .slider__btn_next {
-  position: absolute;
-  right: 0;
-}
-
-.slider__btn_prev {
-  position: absolute;
-  left: 0;
-} */
- .slider__overlaytext{
-  /* width: 80%; */
-  /* margin: auto; */
+.slider__overlaytext {
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* text-align: center; */
-   top: 50%;
-   left: 33%;  
+  top: 50%;
+  left: 33%;
   transform: translate(-50%, -50%);
   color: white;
+}
 
- }
- .slider__overlaytext1{
+.slider__overlaytext1 {
   font-size: 26px;
   line-height: 35px;
   color: #556382;
   font-weight: 300;
- }
- .slider__overlaytext2{
+}
+
+.slider__overlaytext2 {
   text-transform: uppercase;
-    color: #556382;
-    padding: 30px 0 35px 0;
-    font-size: 26px;
-    line-height: 35px;
- }
- .slider__overlaytext3{
+  color: #556382;
+  padding: 20px 0 25px 0;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.slider__overlaytext3 {
   font-size: 20px;
   background: #dddbdb;
   color: #556382;
@@ -69,17 +59,15 @@
   font-weight: 600;
   border-radius: 10px;
   text-align: center;
- }
- .slider__overlaytext3:hover{
- cursor: pointer;
+}
+
+.slider__overlaytext3:hover {
+  cursor: pointer;
   font-weight: 600;
- 
- }
+}
 
 .container__slider__links {
   position: absolute;
-  /* bottom: 5%; */
-  /* left: 50%; */
   display: inline-grid;
   gap: 10px;
   left: 5%;
@@ -90,12 +78,9 @@
   position: relative;
   width: 10px;
   height: 8px;
-  padding: 0;
   border-radius: 50%;
-  outline: none;
-  border: 0;
-  background-color: white;
   border: 1px solid grey;
+  background-color: white;
   transition: background-color 1s ease;
   margin: 0 2px;
 }
@@ -107,11 +92,15 @@
 .slider__item {
   box-sizing: border-box;
   min-width: 100%;
-  height: auto;
   overflow: hidden;
   object-fit: cover;
   transform: translateX(0);
   transition: transform 1s ease;
+}
+
+.slider__item img {
+  width: 100%;
+  height: auto;
 }
 
 .slider__item-active-1 {
@@ -130,30 +119,12 @@
   transform: translateX(-300%);
 }
 
-.slider__item img {
-  width: 100%;
-  /* height: ; */
-  height: auto;
-}
+/* Mobile and Tablet Breakpoints */
 
-/* Breakpoint: 1200px to 1100px */
-@media (max-width: 1200px) and (min-width: 1101px) {
-  .slider__overlaytext1,
-  .slider__overlaytext2 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .slider__overlaytext3 {
-    font-size: 18px;
-    width: 20%;
-  }
-}
-
-/* Breakpoint: 1100px to 900px */
-@media (max-width: 1100px) and (min-width: 901px) {
+/* Tablets: 1200px to 900px */
+@media (max-width: 1200px) {
   .slider__overlaytext {
     left: 40%;
-    /* text-align: center; */
   }
   .slider__overlaytext1,
   .slider__overlaytext2 {
@@ -161,17 +132,20 @@
     line-height: 30px;
   }
   .slider__overlaytext3 {
-    font-size: 17px;
-    width: 25%;
+    font-size: 18px;
+    width: 20%;
   }
 }
 
-/* Breakpoint: 900px to 750px */
-@media (max-width: 900px) and (min-width: 751px) {
+/* Small Tablets: 900px to 750px */
+@media (max-width: 900px) {
+  .container__slider{
+    margin-top: 20%;
+  }
   .slider__overlaytext {
     left: 45%;
-    /* text-align: center; */
   }
+  
   .slider__overlaytext1,
   .slider__overlaytext2 {
     font-size: 20px;
@@ -179,46 +153,53 @@
   }
   .slider__overlaytext3 {
     font-size: 16px;
-    width: 30%;
+    width: 25%;
+    padding: 12px;
   }
 }
 
-/* Breakpoint: 750px to 550px */
-@media (max-width: 750px) and (min-width: 551px) {
-  .slider__overlaytext {
-    left: 50%;
-    /* text-align: center; */
+/* Large Phones: 750px to 550px */
+@media (max-width: 768px) {
+  .container__slider{
+    margin-top: 40%;
   }
   .slider__overlaytext {
     left: 50%;
     text-align: center;
   }
   .slider__overlaytext1,
-  .slider__overlaytext2 {
-    font-size: 18px;
+  .slider__overlaytext2 h1 {
+    font-size: 14px;
     line-height: 25px;
   }
   .slider__overlaytext3 {
     font-size: 14px;
-    padding: 10px;
     width: 40%;
+    padding: 10px;
   }
 }
-
-/* Breakpoint: Below 550px (extra small devices) */
+@media (max-width: 680px) and (min-width : 550px) {
+  .container__slider{
+    margin-top: 50%;
+  }
+}
+/* Small Phones: Below 550px */
 @media (max-width: 550px) {
+  .container__slider{
+    margin-top: 60%;
+  }
   .slider__overlaytext {
     left: 50%;
     text-align: center;
   }
   .slider__overlaytext1,
-  .slider__overlaytext2 {
-    font-size: 16px;
+  .slider__overlaytext2 h1 {
+    font-size: 12px;
     line-height: 22px;
   }
   .slider__overlaytext3 {
     font-size: 12px;
-    padding: 8px;
     width: 50%;
+    padding: 8px;
   }
 }
