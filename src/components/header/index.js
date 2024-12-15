@@ -41,6 +41,10 @@ const Navi = () => {
    const gotoblogList = () => {
      router.push("/blogList/blogList");
    };
+
+   const gotocontacts = () => {
+     router.push("/contacts/contacts");
+   };
  
 
   return (
@@ -188,10 +192,7 @@ const Navi = () => {
               Blogs
               {dropdownVisible.blogs && (
                 <div className={styles.dropdownMenu}>
-                  <a
-                    onClick={gotoblogList}
-                    className={styles.dropdownLink}
-                  >
+                  <a onClick={gotoblogList} className={styles.dropdownLink}>
                     Blog List
                   </a>
                   <a href="#BlogGrid" className={styles.dropdownLink}>
@@ -203,13 +204,14 @@ const Navi = () => {
                 </div>
               )}
             </div>
-            /
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("contacts", true)}
               onMouseLeave={() => toggleDropdown("contacts", false)}
             >
-              Contacts
+              <a onClick={gotocontacts} >
+                Contacts
+              </a>
             </div>
           </nav>
           <div className={styles.navrighttwoicons}>
