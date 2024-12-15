@@ -22,13 +22,18 @@ const Navi = () => {
     }));
   };
   const router = useRouter();
-
+  const gotohome = () => {
+    router.push("/")
+  }
+   const gotoserviceDetails=()=>{
+    router.push("/serviceDetails/serviceDetails")
+   }
   const goToProjects = () => {
     router.push("/projects/projects"); 
   };
-  // const goToOurteam = () => {
-  //   router.push("/ourteam/ourteam"); 
-  // };
+  const goToOurteam = () => {
+    router.push("/ourteam/ourteam"); 
+  };
 
   const goToabout = () => {
     router.push("/about/aboutHead");
@@ -74,7 +79,7 @@ const Navi = () => {
 
       <div className={styles.mainHeader}>
         <div className={styles.topHeaderInner}>
-          <div className={styles.logo}>
+          <div  onClick={gotohome}className={styles.logo}>
             <img src="./images/charles.png" alt="Charles Logo" />
           </div>
 
@@ -87,10 +92,10 @@ const Navi = () => {
               Home
               {dropdownVisible.home && (
                 <div className={styles.dropdownMenu}>
-                  <a href="#HomeVersionOne" className={styles.dropdownLink}>
+                  <a  onClick={gotohome} className={styles.dropdownLink}>
                     Home Version One
                   </a>
-                  <a href="#HomeVersionTwo" className={styles.dropdownLink}>
+                  <a onClick={gotohome} className={styles.dropdownLink}>
                     Home Version Two
                   </a>
                 </div>
@@ -113,12 +118,12 @@ const Navi = () => {
                     About Us
                   </a> */}
 
-                  <a href="#team" className={styles.dropdownLink}>
-                    Our Team
-                  </a>
-                  {/* <a onClick={goToOurteam} className={styles.dropdownLink}>
+                  {/* <a href="#team" className={styles.dropdownLink}>
                     Our Team
                   </a> */}
+                  <a onClick={goToOurteam} className={styles.dropdownLink}>
+                    Our Team
+                  </a>
                   <a href="#faq" className={styles.dropdownLink}>
                     FAQs
                   </a>
@@ -143,7 +148,7 @@ const Navi = () => {
                   <a href="#ServicesVersionTwo" className={styles.dropdownLink}>
                     Services Version Two
                   </a>
-                  <a href="#ServicesDetails" className={styles.dropdownLink}>
+                  <a onClick={gotoserviceDetails} className={styles.dropdownLink}>
                     Services Details
                   </a>
                 </div>

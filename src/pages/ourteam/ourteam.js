@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "@/styles/projects.module.css";
-
+// import styles from "@/styles/projects.module.css";
+import styles from "./ourteam.module.css"
+import AboutUs from "@/components/aboutus/index"
 
 
 // import Navi from "../../components/header";
@@ -22,7 +23,7 @@ function Ourteam() {
 
   return (
     <div>
-      <section className={styles.projects_section}>
+        <section className={styles.projects_section}>
         <img
           src="/images/project1.jpg"
           alt="Background"
@@ -35,6 +36,7 @@ function Ourteam() {
       {/* < Navi /> */}
       {/* <Footer /> */}
       <Teamdata />
+      <AboutUs />
       {/* <section className={styles.image_cards_section}>
         {cardsData.map((card, index) => (
           <div key={index} className={styles.image_card}>

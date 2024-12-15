@@ -31,8 +31,9 @@ font-size: 17px;
 
 .post {
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+      align-items: center;
+      margin-top: -13px;
+      margin-bottom: 15px;
 }
 
 .post_image {

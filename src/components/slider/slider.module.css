@@ -34,12 +34,15 @@
 } */
  .slider__overlaytext{
   /* width: 80%; */
-  margin: auto;
+  /* margin: auto; */
   display: flex;
-  flex-direction: column;
   position: absolute;
-  top: 50%;
-  left: 33%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
+   top: 50%;
+   left: 33%;  
   transform: translate(-50%, -50%);
   color: white;
 
@@ -133,3 +136,89 @@
   height: auto;
 }
 
+/* Breakpoint: 1200px to 1100px */
+@media (max-width: 1200px) and (min-width: 1101px) {
+  .slider__overlaytext1,
+  .slider__overlaytext2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .slider__overlaytext3 {
+    font-size: 18px;
+    width: 20%;
+  }
+}
+
+/* Breakpoint: 1100px to 900px */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .slider__overlaytext {
+    left: 40%;
+    /* text-align: center; */
+  }
+  .slider__overlaytext1,
+  .slider__overlaytext2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .slider__overlaytext3 {
+    font-size: 17px;
+    width: 25%;
+  }
+}
+
+/* Breakpoint: 900px to 750px */
+@media (max-width: 900px) and (min-width: 751px) {
+  .slider__overlaytext {
+    left: 45%;
+    /* text-align: center; */
+  }
+  .slider__overlaytext1,
+  .slider__overlaytext2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .slider__overlaytext3 {
+    font-size: 16px;
+    width: 30%;
+  }
+}
+
+/* Breakpoint: 750px to 550px */
+@media (max-width: 750px) and (min-width: 551px) {
+  .slider__overlaytext {
+    left: 50%;
+    /* text-align: center; */
+  }
+  .slider__overlaytext {
+    left: 50%;
+    text-align: center;
+  }
+  .slider__overlaytext1,
+  .slider__overlaytext2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .slider__overlaytext3 {
+    font-size: 14px;
+    padding: 10px;
+    width: 40%;
+  }
+}
+
+/* Breakpoint: Below 550px (extra small devices) */
+@media (max-width: 550px) {
+  .slider__overlaytext {
+    left: 50%;
+    text-align: center;
+  }
+  .slider__overlaytext1,
+  .slider__overlaytext2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .slider__overlaytext3 {
+    font-size: 12px;
+    padding: 8px;
+    width: 50%;
+  }
+}

@@ -46,6 +46,10 @@
   font-weight: bold;
   color: #00274e;
 }
+.logo:hover{
+  cursor: pointer;
+  
+}
 
 .navLinks {
   display: flex;
