@@ -203,7 +203,7 @@ const Navi = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div>/
             <div
               className={styles.navLink}
               onMouseEnter={() => toggleDropdown("contacts", true)}
