@@ -1,8 +1,8 @@
 /* Top Header */
 .topHeader {
-  background-color: #000f32;;
   color: #fff;
   padding: 14px 18px;
+  background-color: #000f32;
 }
 
 .topHeaderInner {
@@ -33,6 +33,10 @@
 
 /* Main Header */
 .mainHeader {
+  position: sticky;
+  top: 50px;
+  z-index: 99;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +58,7 @@
 .navLinks {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .navLink {

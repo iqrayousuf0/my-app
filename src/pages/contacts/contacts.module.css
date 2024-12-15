@@ -1,0 +1,260 @@
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+  margin-bottom: 10px;
+}
+
+.locationLogo {
+  display: inline-block;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+
+/* Container */
+.container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+height: 60vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Title Section */
+.titleSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.line {
+  width: 50px;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.description {
+  font-size: 16px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Card Image */
+.cardImage {
+  flex: 1;
+  min-width: 50%;
+  max-height: 600px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card Details */
+.cardDetails {
+  flex: 1;
+  padding: 40px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.textareaField {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  resize: none;
+}
+
+.rowLine {
+  margin: 10px 0;
+  border: 0.5px solid #ccc;
+}
+
+.fullLine {
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
+
+/* Button Row */
+.buttonRow {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.sendButton {
+  background-color: #00274e;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sendButton:hover {
+  background-color: #00458b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .cardImage {
+    min-width: 100%;
+  }
+}
+
+
+
+
+
+/* Container for the entire section */
+.conttainer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  height: auto;
+}
+
+/* Wrapper for all the items */
+.itemsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Allows responsiveness */
+}
+
+/* Individual item */
+.item {
+  width: 15%;
+ 
+
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Subtitle style */
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Content area (logo and description) */
+.itemContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Description text styling */
+.description {
+  font-size: 14px;
+  color: #6c757d;
+  flex: 1;
+}
+
+
