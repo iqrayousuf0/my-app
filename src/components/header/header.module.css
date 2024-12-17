@@ -1,16 +1,17 @@
 /* Top Header */
 .navposition{
-  position: fixed;
+  position: sticky;
  width: 100%;
   z-index: 999;
   top: 0;
-  /* overflow: hidden; */
+
 
 }
 .topHeader {
   color: #fff;
   padding: 14px 18px;
   background-color: #000f32;
+  /* background-color: var(--primary-color); */
 }
 
 .topHeaderInner {

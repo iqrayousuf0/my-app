@@ -1,8 +1,44 @@
-body{
-  font-family: 'Source Sans Pro', sans-serif;
+
+/* * {
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box !important;
+} */
+
+
+/* :root {
+  --primary-color: "#0f0",
+
+} */
+
+
+@font-face {
+  font-family: "Nunito-sans-regular";
+  /* src: url("../fonts/nunito-sans-regular"); */
+}
+
+@font-face {
+  font-family: "Nunito-sans-semi";
+  /* src: url("../fonts/nunito-sans-semi"); */
+}
+
+@font-face {
+  font-family: "Nunito-sans-bold";
+  /* src: url("../fonts/nunito-sans-bold"); */
+}
+
+
+
+body {
+  font-family: "Nunito-sans-regular" !important;
+  font-weight: 400 !important;
   font-weight: normal;
-  color: #555555;
-  font-size: 18px;
-  margin: 0;
+  line-height: 1.2 !important;
+  color: #555555 !important
+}
+
+
+body>* {
+  font-family: "Nunito-sans-regular" !important;
 }
 

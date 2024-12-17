@@ -12,6 +12,7 @@ export default function Document() {
 
       <Head >
           {/* <Navi /> */}  
+          {/* <link src="/css/style.css" ref={"stylesheet"} /> */}
         </Head>
       <body>
      

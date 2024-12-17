@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Nunito-sans-regular";
+  src: url("../fonts/nunito-sans-regular");
+}
+
+@font-face {
+  font-family: "Nunito-sans-semi";
+  src: url("../fonts/nunito-sans-semi");
+}
+
+@font-face {
+  font-family: "Nunito-sans-bold";
+  src: url("../fonts/nunito-sans-bold");
+}
+
+
+
+body{
+  font-family: "Nunito-sans-regular";
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+
+body > *{
+  font-family: "Nunito-sans-regular";
+}
