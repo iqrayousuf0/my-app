@@ -1,8 +1,10 @@
 import React from "react";
-import styles from "./cardD.module.css"
+import styles from "./cardD.module.css";
+import { useRouter } from "next/router";
 
 
 function CardsData() {
+  const router = useRouter();
   
   
   const cardsData = [
@@ -17,14 +19,21 @@ function CardsData() {
     //  { imgSrc: "/images/cad15.jpg", text: "Project Development" },
   ];
 
+
+  const navigateToserviceDetails = () => {
+    router.push("/serviceDetails");
+  };
+
   return (
     <div>
       <div className={styles.cardsContainer}>
         <div className={styles.cardstitle}>OUR CASES</div>
         <div className={styles.cardsline}></div>
-        <div className={styles.cardsdesc}>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</div>
-       
-       </div>
+        <div className={styles.cardsdesc}>
+          A tale of a fateful trip that started from this tropic port aboard
+          this tiny ship today stillers
+        </div>
+      </div>
       <section className={styles.image_cards_section}>
         {cardsData.map((card, index) => (
           <div key={index} className={styles.image_card}>
@@ -35,7 +44,9 @@ function CardsData() {
             />
             <div className={styles.card_text}>{card.text}</div>
             <div className={styles.card_circle}>
-              <span className={styles.arrow}>&rarr;</span>
+              <span className={styles.arrow} onClick={navigateToserviceDetails}>
+                &rarr;
+              </span>
             </div>
           </div>
         ))}

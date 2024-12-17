@@ -56,7 +56,7 @@
 
 /* Container */
 .container {
-  
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,9 +141,12 @@ height: 60vh;
   background-color: transparent;
   font-size: 14px;
 }
+.inputField:focus{
+  outline: none;
+}
 
 .textareaField {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
   border: none;
   background-color: transparent;

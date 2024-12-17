@@ -80,7 +80,7 @@
 }
 
 .navLink.active {
-  color: #00274e; /* Active color for Home */
+  color: #00274e; 
 }
 
 .navLink:hover {
@@ -154,9 +154,8 @@
 
   .topHeaderText {
     font-size: 18px;
-    /* Adjust font size */
     margin-bottom: 10px;
-    /* Add spacing between text and icons */
+   
   }
 
   .topHeaderIcons {
@@ -167,9 +166,8 @@
 
   .topHeaderIcons img {
     margin-right: 0;
-    /* Remove extra spacing for cleaner center alignment */
     height: 25px;
-    /* Slightly larger for better visibility */
+
   }
 
   /* Main Header */
@@ -182,9 +180,8 @@
 
   .logo {
     font-size: 28px;
-    /* Slightly larger for emphasis */
     margin-bottom: 15px;
-    /* Space between logo and navigation links */
+   
   }
 
   .navLinks {
@@ -195,7 +192,7 @@
 
   .navLink {
     font-size: 18px;
-    /* Adjust font size */
+    
   }
 }
 
@@ -204,18 +201,18 @@
   /* Top Header */
   .topHeaderText {
     font-size: 16px;
-    /* Further reduce font size */
+   
   }
 
   .topHeaderIcons img {
     height: 20px;
-    /* Adjust icon size */
+  
   }
 
   /* Main Header */
   .logo {
     font-size: 24px;
-    /* Adjust font size */
+   
   }
 
 

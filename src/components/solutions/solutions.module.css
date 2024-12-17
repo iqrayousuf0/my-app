@@ -23,6 +23,7 @@
   line-height: 40px;
   color: #fff;
   width: 27%;
+  margin-top: 60px;
 }
 
 .verticalDivider {
@@ -63,7 +64,7 @@
 /* Our Solutions Section */
 .solutionsSection {
   background-color: white;
-  padding: 40px 20px;
+  padding: 70px 20px;
   text-align: center;
 }
 

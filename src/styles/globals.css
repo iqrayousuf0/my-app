@@ -14,17 +14,17 @@
 
 @font-face {
   font-family: "Nunito-sans-regular";
-  /* src: url("../fonts/nunito-sans-regular"); */
+  src: url("/fonts/NunitoSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Nunito-sans-semi";
-  /* src: url("../fonts/nunito-sans-semi"); */
+  src: url("/fonts/NunitoSans-semiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Nunito-sans-bold";
-  /* src: url("../fonts/nunito-sans-bold"); */
+  src: url("/fonts/Nunitosans-Bold.ttf") format("truetype");
 }
 
 
