@@ -42,3 +42,24 @@ body>* {
   font-family: "Nunito-sans-regular" !important;
 }
 
+/* diff PAGE TITLE */
+.headingh1{
+  font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* home page title */
+.headingh2{
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+}
+
+.textdecs{
+  font-size: 18px;
+  color: #555555;
+}
+
