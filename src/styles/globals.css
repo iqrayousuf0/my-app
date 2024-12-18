@@ -47,11 +47,13 @@ body>* {
   font-size: 45px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 800;
+    
 }
 /* home page title */
 .headingh2{
   font-size: 38px;
+
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 22px;

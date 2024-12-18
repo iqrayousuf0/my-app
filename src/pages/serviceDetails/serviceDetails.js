@@ -1,6 +1,10 @@
 import React from "react";
+
+
+
 import styles from "./serviceDetails.module.css";
 import images from "@/components/slider/images/images";
+
 const serviceDetails = () => {
   return (
     
@@ -12,7 +16,7 @@ const serviceDetails = () => {
           className={styles.background_image}
         />
         <div className={styles.overlay}></div>
-        <h1 className={styles.section_title}>SERVICE DETAILS</h1>
+        <h1 className={`${styles.section_title} headingh1`}>SERVICE DETAILS</h1>
       </section>
 
 
@@ -121,7 +125,7 @@ const serviceDetails = () => {
 
       {/* Sidebar */}
       <aside className={styles.sidebar}>
-        <h3 className="h3">Our Solutions</h3>
+        <h3 className={styles.h3}>Our Solutions</h3>
         <ul className={styles.solutionsList}>
           <li>Travel and Aviation</li>
           <li>Business Services</li>
@@ -131,17 +135,17 @@ const serviceDetails = () => {
           <li>Quality Resourcing</li>
         </ul>
 
-        <h3>Brochure</h3>
+        <h3 className={styles.h3}>Brochure</h3>
         <div className={styles.brochure}>
           <a href="#" className={styles.downloadBtn}>
             Download file.pdf
           </a>
-          <a href="#" className={styles.downloadBtn}>
+          <a href="#" className={styles.downloadBtn2}>
             Download file.zip
           </a>
         </div>
 
-        <h3>Contact Form</h3>
+        <h3 className={styles.h3}>Contact Form</h3>
         <form className={styles.contactForm}>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />

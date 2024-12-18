@@ -1,4 +1,5 @@
 import React from "react";
+// import "@/styles/globals.css";
 import Navi from "../components/header"
 import images from "../components/slider/images/images";
 import styles from "../components/slider/slider.module.css"

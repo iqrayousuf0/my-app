@@ -28,9 +28,9 @@
   .section_title {
     position: relative;
     z-index: 2;
-    color: white;
+    /* color: white;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: bold; */
     text-align: center;
     padding-top: 25px;
   
@@ -115,16 +115,49 @@
   }
   
   .solutionsList li {
+   
     list-style: none;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 10px  20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  font-weight: 600;
+  }
+  .solutionsList li:hover,
+  .solutionsList li:active {
+    background: #f5f8ff;
+    border-color: #bccaea;
+  }
+  
+  .h3{
+    color: #696666;
+    
+  }
+  .brochure{
+    background-color: #043264;
+    color: #fff;
+    border-radius: 10px;
   }
   
   .downloadBtn {
     display: block;
+    /* margin: 10px 0; */
+    color: #fff;
+    /* background-color: #007bff; */
+    text-decoration: none;
+    padding: 14px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    /* border-radius: 5px; */
+    border-bottom: 1PX SOLID #CCC;
+  }
+  .downloadBtn2{
+    display: block;
     margin: 10px 0;
     color: #fff;
-    background-color: #007bff;
+    /* background-color: #007bff; */
     text-decoration: none;
     padding: 8px;
     text-align: center;
