@@ -26,7 +26,7 @@ function WhyChooseUs() {
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
-        <h1 className={styles.title}>WHY CHOOSE US</h1>
+        <h1 className="headingh2">WHY CHOOSE US</h1>
         <div className={styles.greyLine}></div>
         <div className={styles.row}>
           {items.map((item, index) => (

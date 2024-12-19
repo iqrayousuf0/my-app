@@ -55,7 +55,8 @@ function News() {
     <div className={styles.newsSection}>
       {/* Title Section */}
       <div className={styles.titleWrapper}>
-        <h2 className={styles.title}>LATEST NEWS</h2>
+            <h2 className={`${styles.title} headingh2`}>LATEST NEWS</h2>
+        
         <div className={styles.greyLine}></div>
         <p className={styles.description}>
           A tale of a fateful trip that started from this tropic port aboard

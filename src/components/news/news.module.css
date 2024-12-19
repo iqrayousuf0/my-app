@@ -1,5 +1,5 @@
 .newsSection {
-  width: 90%;
+  width: 80%;
   margin: 70px auto;
   text-align: center;
   overflow: hidden;
@@ -10,12 +10,12 @@
 }
 
 .title {
-  font-size: 38px;
+  /* font-size: 38px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Nunito Sans', sans-serif;
   color: #232323;
-  margin: 15px;
+  margin: 15px; */
 }
 
 .greyLine {

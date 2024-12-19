@@ -27,7 +27,9 @@ function CardsData() {
   return (
     <div>
       <div className={styles.cardsContainer}>
-        <div className={styles.cardstitle}>OUR CASES</div>
+        <div className={`${styles.cardstitle}  headingh2`}>OUR CASES</div>
+        
+
         <div className={styles.cardsline}></div>
         <div className={styles.cardsdesc}>
           A tale of a fateful trip that started from this tropic port aboard
